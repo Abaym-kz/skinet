@@ -1,12 +1,13 @@
 <div class="d-flex flex-column flex-md-row align-items-center
   justify-content-between pb-sm-3 mb-sm-4 mt-sm-3
   border-bottom shadow-sm fixed-top">
-  <img src="/assets/images/logo.png" style="max-height: 70px;" class="ms-3" alt="logo">
+  <img src="/assets/images/logo.png" style="max-height: 70px;" class="logo" alt="logo" routerLink='/'>
   <!-- <h5 class=" mr-md-0 mr-md-3">Company name</h5> -->
   <nav class="mt-2 mt-md-0 ms-md-0 text-uppercase" style="font-size: larger;">
-    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Home</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Shop</a>
-    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Contact</a>
+    <a class="me-3 py-2" [routerLink]="['/']" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}">Home</a>
+    <a class="me-3 py-2" routerLink='/shop' routerLinkActive="active">Shop</a>
+    <a class="me-3 py-2" href="#">Contact</a>
   </nav>
   <div class="d-flex align-items-center">
     <a class="position-relative">
