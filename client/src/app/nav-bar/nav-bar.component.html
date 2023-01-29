@@ -1,9 +1,8 @@
-<div class="d-flex flex-column flex-md-row align-items-center
-  justify-content-between pb-sm-3 mb-sm-4 mt-sm-3
+<header class="d-flex flex-column flex-md-row align-items-center justify-content-between
+  p-3 px-md-4 mb-3 bg-white
   border-bottom shadow-sm fixed-top">
   <img src="/assets/images/logo.png" style="max-height: 70px;" class="logo" alt="logo" routerLink='/'>
-  <!-- <h5 class=" mr-md-0 mr-md-3">Company name</h5> -->
-  <nav class="mt-2 mt-md-0 ms-md-0 text-uppercase" style="font-size: larger;">
+  <nav class="my-2 mt-md-0 ms-md-3 text-uppercase" style="font-size: larger;">
     <a class="me-3 py-2" [routerLink]="['/']" routerLinkActive="active"
       [routerLinkActiveOptions]="{exact: true}">Home</a>
     <a class="me-3 py-2" routerLink='/shop' routerLinkActive="active">Shop</a>
@@ -17,4 +16,4 @@
     <a class="btn btn-outline-secondary me-2 py-2" href="#">Login</a>
     <a class="btn btn-outline-secondary me-3 py-2" href="#">Sign up</a>
   </div>
-</div>
+</header>
