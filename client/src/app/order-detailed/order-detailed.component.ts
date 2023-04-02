@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Order } from 'src/app/shared/models/order';
 import { BreadcrumbService } from 'xng-breadcrumb';
-import { OrdersService } from '../orders.service';
+import { OrdersService } from '../orders/orders.service';
 
 @Component({
   selector: 'app-order-detailed',
