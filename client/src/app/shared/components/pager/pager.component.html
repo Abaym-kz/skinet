@@ -3,6 +3,8 @@
   [totalItems]="totalCount"
   (pageChanged)="onPagerChange($event)"
   [itemsPerPage]="pageSize"
+  [maxSize]="10"
+  [ngModel]="pageNumber"
   previousText="&lsaquo;"
   nextText="&rsaquo;"
   firstText="&laquo;"

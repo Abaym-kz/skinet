@@ -13,14 +13,16 @@ export class OrderDetailedComponent implements OnInit {
   order?: Order;
 
   constructor(private orderService: OrdersService, private route: ActivatedRoute,
-    private bcService: BreadcrumbService) { }
+    private bcService: BreadcrumbService) {
+      this.bcService.set('@OrderDetailed', ' ');
+     }
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
     id && this.orderService.getOrderDetailed(+id).subscribe({
       next: order => {
         this.order = order;
-        this.bcService.set('@Order.Detailed', `Order# $(order.id) - ${order.status}`);
+        this.bcService.set('@OrderDetailed', `Order# $(order.id) - ${order.status}`);
       }
     })
   }
